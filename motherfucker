@@ -1,0 +1,238 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "🎮 Popit trading 🎮",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Popit trading",
+   LoadingSubtitle = "by qazify",
+   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "🎮 Key 🎮",
+      Subtitle = "Key System",
+      Note = "discord.gg/vK6Rkx45", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Alpha_Hub_Profr"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local BuyTab = Window:CreateTab("Auto Buy", nil) -- Title, Image
+local Section = BuyTab:CreateSection("AutoBuys")
+
+local Button = BuyTab:CreateButton({
+   Name = "Stop the autobuy",
+   Callback = function()
+   _G.Jiji = false
+   end,
+})
+
+local Button = BuyTab:CreateButton({
+   Name = "Auto Buy Dart",
+   Callback = function()
+   _G.Jiji = true
+
+while _G.Jiji do
+task.wait()
+local args = {
+    [1] = "Dart"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            end
+   end,
+})
+
+local Button = BuyTab:CreateButton({
+   Name = "Auto Buy Dart",
+   Callback = function()
+   _G.Jiji = true
+
+while _G.Jiji do
+task.wait()
+local args = {
+    [1] = "Dart"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            end
+        end,
+    })
+
+local Button = BuyTab:CreateButton({
+   Name = "Auto Buy Flower Rainbow",
+   Callback = function()
+   _G.Jiji = true
+
+while _G.Jiji do
+task.wait()
+local args = {
+    [1] = "Flower Rainbow"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            end
+        end,
+    })
+
+local Button = BuyTab:CreateButton({
+   Name = "Auto Buy Walky Talky",
+   Callback = function()
+   _G.Jiji = true
+
+while _G.Jiji do
+task.wait()
+local args = {
+    [1] = "Walky Talky"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            end
+        end,
+    })
+
+local Button = BuyTab:CreateButton({
+   Name = "Auto Buy Nothing",
+   Callback = function()
+   _G.Jiji = true
+
+while _G.Jiji do
+task.wait()
+local args = {
+    [1] = "Nothing"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            end
+        end,
+    })
+
+local Button = BuyTab:CreateButton({
+   Name = "Buy Demogorgon",
+   Callback = function()
+   _G.Jiji = true
+
+while _G.Jiji do
+task.wait()
+local args = {
+    [1] = "Demogorgan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            end
+        end,
+    })
+
+local Button = BuyTab:CreateButton({
+   Name = "Auto Buy Green Ooze",
+   Callback = function()
+   _G.Jiji = true
+
+while _G.Jiji do
+task.wait()
+local args = {
+    [1] = "Green Ooze"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            end
+        end,
+    })
+
+local Button = BuyTab:CreateButton({
+   Name = "Auto Buy Star Rainbow",
+   Callback = function()
+   _G.Jiji = true
+
+while _G.Jiji do
+task.wait()
+local args = {
+    [1] = "Star Rainbow"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            end
+        end,
+    })
+
+local CraftTab = Window:CreateTab("Auto Craft", nil) -- Title, Image
+local Section = CraftTab:CreateSection("AutoCraft")
+
+local Button = CraftTab:CreateButton({
+   Name = "Stop crafting",
+   Callback = function()
+   _G.Jiji = false
+   end,
+})
+
+local Button = CraftTab:CreateButton({
+   Name = "Auto craft singularity",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/Z52Efcu6"))()
+   end,
+})
+
+local Button = CraftTab:CreateButton({
+   Name = "Auto craft plunger bow",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/2FXTHgin"))()
+   end,
+})
+
+local Button = CraftTab:CreateButton({
+   Name = "Auto craft Radioactive",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/BMEqQgAV"))()
+   end,
+})
+
+local Button = CraftTab:CreateButton({
+   Name = "Auto craft demon eye",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/j1Wqmq6X"))()
+   end,
+})
+
+local Button = CraftTab:CreateButton({
+   Name = "Auto craft Beacon",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/e0V2ks0x"))()
+   end,
+})
+
+local OthersTab = Window:CreateTab("Other", nil) -- Title, Image
+local Section = OthersTab:CreateSection("you can get scripts here !")
+
+local Button = OthersTab:CreateButton({
+   Name = "Fly gui",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/Zmhpj1tH"))()
+   end,
+})
+
+local Button = OthersTab:CreateButton({
+   Name = "WalkSpeed Gui",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/BJwVUud2"))()
+   end,
+})
+
+local CreditsTab = Window:CreateTab("Credits", nil) -- Title, Image
+local Section = CreditsTab:CreateSection("Made by qazify_scripter")
